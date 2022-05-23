@@ -29,4 +29,4 @@ echo "TIMING - Starting jupyter at: $(date)"
 
 # Launch the Jupyter Notebook Server
 set -x
-/usr/local/anaconda3/jupyter notebook --config="${CONFIG_FILE}" <%= context.extra_jupyter_args %>
+/usr/local/anaconda3/bin/jupyter notebook --config="${CONFIG_FILE}" <%= context.extra_jupyter_args %>
